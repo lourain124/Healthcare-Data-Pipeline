@@ -1,0 +1,22 @@
+# Entorno local
+venv/
+.venv/
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Git / IDE
+.git/
+.github/
+.idea/
+.vscode/
+
+# Datos grandes opcionales (el contenedor puede regenerarlos; monta un volumen si quieres persistir)
+data/raw/*.csv
+data/processed/*.csv
+data/final/*.csv
