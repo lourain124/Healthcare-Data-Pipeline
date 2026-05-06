@@ -1,0 +1,17 @@
+"""Configuracion centralizada del logging para todo el pipeline."""
+
+from __future__ import annotations
+
+import logging
+import sys
+
+
+def configure_logging(level: str = "INFO") -> None:
+    lvl = getattr(logging, level.upper(), logging.INFO)
+    logging.basicConfig(
+        level=lvl,
+        format="%(asctime)s | %(levelname)-8s | %(name)s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        stream=sys.stdout,
+        force=True,
+    )

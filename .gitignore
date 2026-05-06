@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+.env
+.env.local
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Datos generados (mantener estructura con .gitkeep)
+data/raw/*.csv
+data/processed/*.csv
+data/final/*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tests / cobertura
+.pytest_cache/
+.coverage
+htmlcov/
